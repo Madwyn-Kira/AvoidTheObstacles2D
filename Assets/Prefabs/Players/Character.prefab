@@ -103,6 +103,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _entityAnimator: {fileID: 8338898948245397042}
   _rigidbody: {fileID: 6314024054056574393}
+  _groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  _groundCheckDistance: 0.1
 --- !u!114 &9170176828988874233
 MonoBehaviour:
   m_ObjectHideFlags: 0
