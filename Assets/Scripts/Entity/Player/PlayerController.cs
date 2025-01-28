@@ -29,6 +29,8 @@ public class PlayerController : EntityBase
     private void Die()
     {
         ChangeState(new EntityDieState());
+
+        GameManager.Instance.ShowEndGamePanel();
     }
 
     private void OnDestroy()

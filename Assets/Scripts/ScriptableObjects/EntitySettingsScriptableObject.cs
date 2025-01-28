@@ -7,4 +7,5 @@ public class EntitySettingsScriptableObject : ScriptableObject
 
     public int MaxHealth = 100;
     public float Speed = 9;
+    public int Damage = 0;
 }

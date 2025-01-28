@@ -1,5 +1,10 @@
+using UnityEngine;
+
 public class NeitralController : EntityBase
 {
+    [SerializeField]
+    private FallenTrapCollisionChecker _fallenTrapCollisionChecker;
+
     public override void InitializeEntity<T>(T settings)
     {
         base.InitializeEntity(settings);
@@ -10,7 +15,9 @@ public class NeitralController : EntityBase
         base._healthController.OnHealthChanged += ChangeHealth;
         base._healthController.OnDeath += Die;
 
-        ChangeState(new PlayerIdleState());
+        _fallenTrapCollisionChecker.InitializeCkecker(this);
+
+        ChangeState(new NeitralIdleState());
     }
 
     private void Update()

@@ -12,6 +12,7 @@ public abstract class EntityBase : MonoBehaviour
     public Animator EntityAnimator { get { return _entityAnimator; } }
     public Rigidbody2D EntityRigidbody { get { return _rigidbody; } }
     public EntitySettingsScriptableObject EntitySettings { get { return _entitySettingsScriptableObject; } }
+    public HealthController EntityHealthController { get { return _healthController; } }
 
     public event Action<EntityBase> OnEntityDestroy;
 
